@@ -36,7 +36,7 @@ function App() {
   return (
     <div className="app-container">
       <header className="header">
-        <h1 className="title">Dataset Explorer</h1>
+        <h1 className="title">InDex</h1>
         {data && <button className="btn btn-secondary" onClick={() => setData(null)}>New Upload</button>}
       </header>
 
