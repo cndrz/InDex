@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: dataset-explorer
+    env: node
+    buildCommand: "npm install && cd client && npm install && npm run build && cd ../server && npm install"
+    startCommand: "npm start"
+    envVars:
+      - key: NODE_ENV
+        value: production
