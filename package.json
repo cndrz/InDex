@@ -2,9 +2,14 @@
   "name": "dataset-explorer-root",
   "version": "1.0.0",
   "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
   "scripts": {
     "dev": "npx concurrently \"npm run dev --prefix client\" \"npm run dev --prefix server\"",
     "start": "node server/index.js",
-    "build": "npm run build --prefix client"
+    "build": "npm run build --prefix client",
+    "install-all": "npm install"
   }
 }
